@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOCA | Create. Inspire. Elevate.</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Instrument+Serif:ital@1&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Custom Theme Overrides */
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b0705;
+            color: #e7dfd5;
+        }
+        .font-serif-title { font-family: 'Cinzel', serif; }
+        .font-signature { font-family: 'Instrument Serif', serif; }
+        
+        /* High-End Gold Radiant Text Glow Effect */
+        .text-glow-gold {
+            background: linear-gradient(135deg, #ffffff 0%, #ffdf9e 40%, #d4af37 70%, #aa7c11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));
+            text-shadow: 
+                0 0 10px rgba(212, 175, 55, 0.4),
+                0 0 25px rgba(212, 175, 55, 0.2),
+                0 0 50px rgba(170, 124, 17, 0.15);
+        }
+
+        /* Subtle glow for secondary headers */
+        .text-glow-subtle {
+            text-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
+        }
+        
+        .border-gold { border-color: rgba(212, 175, 55, 0.18); }
+        .border-gold-bright { border-color: rgba(212, 175, 55, 0.6); }
+        .bg-gold-glow { background: rgba(212, 175, 55, 0.02); }
+        
+        /* Subtle divider sparkles */
+        .sparkle-divider::before, .sparkle-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.25), transparent);
+        }
+    </style>
+</head>
+<body class="selection:bg-amber-900 selection:text-amber-200 antialiased overflow-x-hidden">
+
+    <!-- HERO SECTION -->
+    <header class="relative min-h-screen flex flex-col justify-between items-center px-6 py-4 md:px-12 md:py-6 overflow-hidden">
+        
+        <!-- Background Artwork Layer using images/BG.jpg -->
+        <div class="absolute inset-0 z-0 pointer-events-none">
+            <div class="w-full h-full bg-cover bg-center" style="background-image: url('images/BG.jpg');"></div>
+            <!-- Vignette shadow gradient overlay to blend seamlessly with the content grid below -->
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0b0705] via-transparent to-[#0b0705]/40"></div>
+        </div>
+
+        <!-- Sticky Floating Socials (Desktop Only Left Side) -->
+        <div class="hidden lg:flex flex-col gap-6 absolute left-8 top-1/3 z-20 text-stone-500 text-sm">
+            <a href="https://www.instagram.com/y0ca?igsh=MXdmaDN4NnRybWtzbA%3D%3D&utm_source=qr" target="_blank" class="hover:text-amber-400 transition-colors"><i class="fab fa-instagram text-lg"></i></a>
+            <a href="https://youtube.com/@yocaislive?si=UGBMkjcQF9pKDW7G" target="_blank" class="hover:text-amber-400 transition-colors"><i class="fab fa-youtube text-lg"></i></a>
+            <a href="https://pin.it/7f2nJyoaA" target="_blank" class="hover:text-amber-400 transition-colors"><i class="fab fa-pinterest text-lg"></i></a>
+            <a href="https://wa.me/916289665819" target="_blank" class="hover:text-emerald-400 transition-colors"><i class="fab fa-whatsapp text-lg"></i></a>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="w-full flex justify-between items-center z-10 max-w-7xl">
+            <div class="font-serif-title text-xl md:text-2xl tracking-widest text-glow-gold font-bold">YOCA</div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex gap-8 text-xs tracking-[0.2em] text-stone-400 uppercase font-medium">
+                <a href="#" class="text-amber-200 hover:text-amber-400 transition">Home</a>
+                <a href="about.html" class="hover:text-amber-400 transition">About</a>
+                
+                <a href="#" class="hover:text-amber-400 transition">Blogs</a>
+                <a href="https://wa.me/916289665819" target="_blank" class="hover:text-amber-400 transition">Contact</a>
+            </div>
+            
+            <!-- Desktop Contact Me Button linked to WhatsApp -->
+            <a href="https://wa.me/916289665819" target="_blank" class="hidden md:inline-block border border-gold px-5 py-2 text-xs uppercase tracking-widest text-amber-200/90 hover:bg-amber-500/10 transition-all rounded-sm">
+                Contact Me <span class="ml-1 text-[10px]">&#x2726;</span>
+            </a>
+
+            <!-- Mobile Hamburger Button -->
+            <button class="md:hidden text-amber-200 focus:outline-none text-xl">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </nav>
+
+        <!-- Core Hero Title Space -->
+        <div class="w-full text-center z-10 my-auto py-12">
+            <!-- Glowing Hero Text -->
+            <h1 class="font-serif-title text-6xl sm:text-8xl md:text-9xl tracking-[0.15em] font-bold text-glow-gold select-none pb-2">
+                YOCA
+            </h1>
+            <p class="text-[10px] md:text-xs tracking-[0.6em] text-amber-200/60 uppercase mt-2 font-light">
+                yocaaivvesyyou
+            </p>
+            
+            <div class="flex items-center justify-center gap-3 my-8 max-w-md mx-auto opacity-80 sparkle-divider">
+                <span class="text-[9px] md:text-xs uppercase tracking-[0.3em] text-amber-100 font-medium whitespace-nowrap">Create. Inspire. Elevate.</span>
+            </div>
+
+            <button class="border border-gold bg-black/40 backdrop-blur-sm px-8 py-3 text-xs uppercase tracking-[0.2em] text-amber-200 hover:border-gold-bright transition-all duration-300 rounded-sm shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+                Explore More <span class="ml-1 text-[10px]">&#x2726;</span>
+            </button>
+        </div>
+
+        <!-- Scroll Indicator (Desktop Only Right Side) -->
+        <div class="hidden lg:block absolute right-8 bottom-12 z-20 pointer-events-none">
+            <p class="text-[9px] tracking-[0.4em] text-stone-500 uppercase rotate-90 origin-right translate-x-3">Scroll &rarr;</p>
+        </div>
+    </header>
+
+    <!-- CONTENT WRAPPER -->
+    <main class="max-w-5xl mx-auto px-4 md:px-8 pb-24 space-y-16 md:space-y-24 relative z-10">
+
+        <!-- ABOUT ME SECTION -->
+        <section class="border border-gold bg-gold-glow/40 backdrop-blur-md rounded-lg p-6 md:p-10 shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                
+                <!-- Portrait Block Container updated to look inside images/ folder -->
+                <div class="col-span-1 md:col-span-4 flex justify-center">
+                    <div class="p-1.5 border border-gold/40 rounded-sm bg-[#0b0705]">
+                        <img src="images/BG.jpg" alt="Yoca Portrait" class="w-full max-w-[240px] md:max-w-full aspect-square object-cover object-center filter grayscale-[15%] sepia-[20%] brightness-90">
+                    </div>
+                </div>
+
+                <!-- Text Info -->
+                <div class="col-span-1 md:col-span-5 space-y-4 text-center md:text-left">
+                    <h2 class="font-serif-title text-xl md:text-2xl tracking-widest text-glow-gold font-medium text-amber-100">ABOUT ME</h2>
+                    <p class="text-stone-400 text-xs md:text-sm leading-relaxed font-light">
+                        I'm Yoca, a passionate creator who believes in the power of creativity and self-expression. Through my work, I aim to inspire, connect, and bring ideas to life. Whether it's through visuals, music, or thoughts — I create from the heart and for the soul.
+                    </p>
+                    <div class="font-signature text-amber-400/90 text-glow-subtle text-4xl pt-2">Yoca</div>
+                </div>
+
+                <!-- List Badges Meta Tags -->
+                <div class="col-span-1 md:col-span-3 flex flex-col sm:flex-row md:flex-col flex-wrap justify-center gap-2 text-[11px] tracking-wider text-stone-300">
+                    <div class="flex items-center gap-3 border border-stone-800/60 bg-black/50 px-3 py-2.5 rounded-md flex-1 md:w-full">
+                        <i class="fa-regular fa-lightbulb text-amber-500/70 w-4"></i> Creative Thinker
+                    </div>
+                    <div class="flex items-center gap-3 border border-stone-800/60 bg-black/50 px-3 py-2.5 rounded-md flex-1 md:w-full">
+                        <i class="fa-regular fa-image text-amber-500/70 w-4"></i> Visual Designer
+                    </div>
+                    <div class="flex items-center gap-3 border border-stone-800/60 bg-black/50 px-3 py-2.5 rounded-md flex-1 md:w-full">
+                        <i class="fa-regular fa-folder text-amber-500/70 w-4"></i> Content Creator
+                    </div>
+                    <div class="flex items-center gap-3 border border-stone-800/60 bg-black/50 px-3 py-2.5 rounded-md flex-1 md:w-full">
+                        <i class="fa-solid fa-music text-amber-500/70 w-4"></i> Music Lover
+                    </div>
+                    <div class="flex items-center gap-3 border border-stone-800/60 bg-black/50 px-3 py-2.5 rounded-md flex-1 md:w-full">
+                        <i class="fa-regular fa-heart text-amber-500/70 w-4"></i> Dreamer
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- STATS BAR PANEL -->
+        <section class="border border-gold bg-gold-glow/40 backdrop-blur-sm grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-gold/10 rounded-lg text-center overflow-hidden shadow-[0_10px_25px_rgba(0,0,0,0.4)]">
+            <div class="p-6 space-y-1">
+                <div class="text-2xl md:text-3xl text-amber-100 font-light font-serif-title text-glow-subtle">&#x2726; 5+</div>
+                <div class="text-[9px] md:text-[10px] tracking-widest uppercase text-stone-500">Years of Experience</div>
+            </div>
+            <div class="p-6 space-y-1 border-t-0">
+                <div class="text-2xl md:text-3xl text-amber-100 font-light font-serif-title text-glow-subtle">100+</div>
+                <div class="text-[9px] md:text-[10px] tracking-widest uppercase text-stone-500">Projects Completed</div>
+            </div>
+            <div class="p-6 space-y-1">
+                <div class="text-2xl md:text-3xl text-amber-100 font-light font-serif-title text-glow-subtle">10K+</div>
+                <div class="text-[9px] md:text-[10px] tracking-widest uppercase text-stone-500">Community</div>
+            </div>
+            <div class="p-6 space-y-1">
+                <div class="text-2xl md:text-3xl text-amber-100 font-light font-serif-title text-glow-subtle">100%</div>
+                <div class="text-[9px] md:text-[10px] tracking-widest uppercase text-stone-500">Passion</div>
+            </div>
+        </section>
+
+        <!-- CONNECT SOCIAL LINKS HUB -->
+        <section class="space-y-6 text-center">
+            <div class="flex items-center justify-center gap-4 opacity-70 sparkle-divider max-w-lg mx-auto">
+                <h2 class="font-serif-title text-sm tracking-[0.3em] text-glow-gold uppercase whitespace-nowrap">Connect With Me</h2>
+            </div>
+
+            <!-- Social Grid (Cleaned and Balanced layout for 3 links) -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
+                
+                <a href="https://www.instagram.com/y0ca?igsh=MXdmaDN4NnRybWtzbA%3D%3D&utm_source=qr" target="_blank" class="group border border-stone-900 bg-stone-950/50 p-6 rounded-lg flex flex-col items-center justify-center gap-2 hover:border-gold/40 transition-all duration-300">
+                    <i class="fab fa-instagram text-2xl text-amber-200/80 group-hover:text-amber-400 group-hover:scale-110 transition-all"></i>
+                    <span class="text-[11px] font-bold tracking-widest uppercase block mt-1 text-stone-300">Instagram</span>
+                    <span class="text-[9px] text-stone-600 group-hover:text-stone-400 transition-colors">@y0ca</span>
+                </a>
+
+                <a href="https://youtube.com/@yocaislive?si=UGBMkjcQF9pKDW7G" target="_blank" class="group border border-stone-900 bg-stone-950/50 p-6 rounded-lg flex flex-col items-center justify-center gap-2 hover:border-gold/40 transition-all duration-300">
+                    <i class="fab fa-youtube text-2xl text-amber-200/80 group-hover:text-amber-400 group-hover:scale-110 transition-all"></i>
+                    <span class="text-[11px] font-bold tracking-widest uppercase block mt-1 text-stone-300">Youtube</span>
+                    <span class="text-[9px] text-stone-600 group-hover:text-stone-400 transition-colors">@yocaislive</span>
+                </a>
+
+                <a href="https://pin.it/7f2nJyoaA" target="_blank" class="group border border-stone-900 bg-stone-950/50 p-6 rounded-lg flex flex-col items-center justify-center gap-2 hover:border-gold/40 transition-all duration-300">
+                    <i class="fab fa-pinterest text-2xl text-amber-200/80 group-hover:text-amber-400 group-hover:scale-110 transition-all"></i>
+                    <span class="text-[11px] font-bold tracking-widest uppercase block mt-1 text-stone-300">Pinterest</span>
+                    <span class="text-[9px] text-stone-600 group-hover:text-stone-400 transition-colors">Yoca</span>
+                </a>
+
+            </div>
+
+            <!-- WhatsApp Action Button at Social Hub -->
+            <div class="pt-4">
+                <a href="https://wa.me/916289665819" target="_blank" class="inline-flex items-center gap-2 border border-gold bg-[#25D366]/5 hover:bg-[#25D366]/10 px-6 py-3 text-[10px] uppercase tracking-[0.2em] text-amber-200 hover:border-[#25D366] transition-all duration-300 rounded-sm">
+                    <i class="fab fa-whatsapp text-sm text-[#25D366]"></i> Chat on WhatsApp <span class="ml-1 text-[8px]">&#x2726;</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- QUOTE BLURB SECTION -->
+        <section class="text-center py-6 space-y-3 max-w-xl mx-auto">
+            <span class="text-2xl text-amber-600/50 font-serif-title">&ldquo;</span>
+            <p class="text-base md:text-lg text-amber-100/90 tracking-wide font-light italic text-glow-subtle">
+                Art is not what you see, but what you make others feel.
+            </p>
+            <div class="w-full opacity-30 sparkle-divider max-w-[120px] mx-auto pt-2"></div>
+        </section>
+
+        <!-- PHONE DEDICATED BOTTOM CONTACT BUTTON linked to WhatsApp -->
+        <div class="block md:hidden pt-4">
+            <a href="https://wa.me/916289665819" target="_blank" class="block w-full text-center border border-gold bg-[#25D366]/10 py-3 text-xs uppercase tracking-[0.2em] text-amber-200 font-bold rounded-sm shadow-[0_0_15px_rgba(37,211,102,0.15)]">
+                <i class="fab fa-whatsapp mr-1 text-[#25D366]"></i> Contact Me on WhatsApp <span class="ml-1 text-[10px]">&#x2726;</span>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER LINKS AND CREDITS -->
+    <footer class="border-t border-stone-900 bg-black/70 backdrop-blur-md text-[10px] tracking-wider text-stone-600 py-8 px-4">
+        <div class="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>&copy; 2026 Yoca. All rights reserved.</div>
+            
+            <div class="flex gap-4 uppercase text-[9px] tracking-widest text-stone-500">
+                <a href="#" class="hover:text-stone-300">Home</a>
+                <a href="about.html" class="hover:text-stone-300">About</a>
+              
+                <a href="#" class="hover:text-stone-300">Blogs</a>
+                <a href="https://wa.me/916289665819" target="_blank" class="hover:text-stone-300">Contact</a>
+            </div>
+
+            <div>Made with <span class="text-amber-700">&hearts;</span> by Yoca</div>
+        </div>
+    </footer>
+
+</body>
+</html>
